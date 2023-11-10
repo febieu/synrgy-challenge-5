@@ -20,7 +20,6 @@ interface TMDBService {
         @Query("number") number: Int = 100,
         @Query("query") query: String = "pie",
 
-
         //Api Recipes
 //        @Query("apiKey") apiKey: String = "bf0138bf61ce4a1a9c3bfdc745cf9559",
 //        @Query("number") number: Int = 100,
