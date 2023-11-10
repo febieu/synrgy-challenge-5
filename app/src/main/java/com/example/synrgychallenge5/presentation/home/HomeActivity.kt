@@ -55,7 +55,8 @@ class HomeActivity : AppCompatActivity() {
                 return HomeViewModel(
                     homeRepository = RemoteRepository(
                         tmdbService = Retrofit.Builder()
-                            .baseUrl("https://api.themoviedb.org/3/")
+                            .baseUrl("https://api.spoonacular.com/")
+//                            .baseUrl("https://api.themoviedb.org/3/")
                             .addConverterFactory(GsonConverterFactory.create())
                             .build()
                             .create(TMDBService::class.java),
