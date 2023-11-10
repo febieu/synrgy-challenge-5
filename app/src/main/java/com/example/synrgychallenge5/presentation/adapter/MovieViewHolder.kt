@@ -10,8 +10,9 @@ class MovieViewHolder(
 ) : RecyclerView.ViewHolder(binding.root) {
     fun bind(movie: Movie) {
         binding.tvTitleMovie.text = movie.title
+        binding.tvDescMovie.text = movie.restaurantChain
         binding.ivMovie.load(movie.image)
-//        binding.ivMovie.load("https://spoonacular.com/recipeImages/w500${movie.image}")
+
 //        binding.tvTitleMovie.text = movie.originalTitle
 //        binding.tvDescMovie.text = movie.overview
 //        binding.ivMovie.load("https://image.tmdb.org/t/p/w500${movie.posterPath}")

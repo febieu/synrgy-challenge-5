@@ -10,6 +10,6 @@ class RemoteRepository(
     private val tmdbService: TMDBService,
 ) : HomeRepository {
     override suspend fun fetchMovies(): List<Movie> {
-        return tmdbService.fetchMovies().results?.map { result -> result.toMovie() }.orEmpty()
+        return tmdbService.fetchMovies().menuItems?.map { result -> result.toMovie() }.orEmpty()
     }
 }
