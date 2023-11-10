@@ -11,4 +11,32 @@
         <item name="backgroundTint">#bb9457</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="PrimaryEditText">
+        <item name="fontFamily">@font/lato_bolditalic</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppToolbarTitle">
+        <item name="fontFamily">@font/paytoneone_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="fontFamily">@font/breeserif_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Desc">
+        <item name="fontFamily">@font/ebgaramond_regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="PlaceText">
+        <item name="fontFamily">@font/abel_regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
 </resources>

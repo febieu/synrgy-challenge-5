@@ -8,18 +8,20 @@
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/AppToolbarTitle"
         android:text="@string/app_name"
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:layout_gravity="center"/>
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            style="@style/PrimaryEditText"
             android:hint="Masukkan username"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -31,6 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            style="@style/PrimaryEditText"
             android:hint="Masukkan password"
             android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
