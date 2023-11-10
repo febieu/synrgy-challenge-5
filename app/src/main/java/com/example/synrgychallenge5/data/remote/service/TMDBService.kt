@@ -11,13 +11,16 @@ interface TMDBService {
      * Find movies using over 30 filters and sort options.
      */
 //    @GET("discover/movie")
-//    @GET("recipes/complexSearch")
-    @GET("food/menuItems/search")
+//    @GET("food/menuItems/search")
+    @GET("recipes/complexSearch")
     suspend fun fetchMovies(
+        //Api Recipes
         @Query("apiKey") apiKey: String = "bf0138bf61ce4a1a9c3bfdc745cf9559",
+        @Query("number") number: Int = 100,
+        @Query("query") query: String = "pasta",
+        @Query("cuisine") cuisine: String = "british",
 
-//        @Query("number") number: Int = 20,
-//        @Query("query") query: String = "pasta",
+        //Untuk TMDB
 //        @Query("api_key") apiKey: String = "f6c7c9267315593505339c445012f5e5",
 //        @Query("with_original_language") withOriginalLanguage: String = "ja",
     ): RecipesResponse
